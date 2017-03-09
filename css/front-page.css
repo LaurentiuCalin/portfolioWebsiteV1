@@ -1,0 +1,55 @@
+#design-right{
+	width: 48%;
+    height: 100%;
+	background-image: url('../img/designBG.png');
+	background-size: cover;
+	-webkit-filter: blur(2px);
+  	filter: blur(2px);
+	float: right;
+	margin: 1%;
+	transition:0.5s;
+}
+#code-left{
+	margin: 1%;
+	width: 48%;
+    height: 100%;
+	background-image: url('../img/codeBG.jpg');
+	background-size: cover;
+	float: left;
+	-webkit-filter: blur(2px);
+  	filter: blur(2px);
+	transition:0.5s;
+}
+main{height: 70vh;}
+
+#code,#design{
+	margin-top: 25%;
+	visibility: hidden; 
+	opacity: 0;
+	color: #fff;
+	stroke
+	vertical-align: middle;
+	transition: opacity 0.5s; 
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+
+}
+#design-right:hover{
+	-webkit-filter: blur(0);
+  	filter: blur(0);
+  	transition:0.5s;
+}
+#code-left:hover{
+	-webkit-filter: blur(0);
+  	filter: blur(0);
+  	transition:0.5s;
+}
+#design-right:hover #design{
+	visibility: visible; 
+	opacity: 1;
+}
+
+#code-left:hover #code{
+	visibility: visible;
+	opacity: 1;
+}
